@@ -1,0 +1,27 @@
+{
+  "name": "frontend-360-days-challenge",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mitshivi-fe/frontend-problems-360days.git"
+  },
+  "keywords": [
+    "javascript",
+    "html",
+    "css",
+    "frontend",
+    "web-development",
+    "interview"
+  ],
+  "author": "Shivi Mittal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mitshivi-fe/frontend-problems-360days/issues"
+  },
+  "homepage": "https://github.com/mitshivi-fe/frontend-problems-360days#readme"
+}
