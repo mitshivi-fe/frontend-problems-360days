@@ -1,4 +1,8 @@
-console.log('starting 360 days of coding schedule.');
+console.log('Table of Contents');
 
+const data = [
+    {date: '4 march', Topics: 'Promises'},
+    {date: '5 march', Topics: "'JS Utility Questions', 'DOM Manipulation', 'Machine Coding'"}
+]
 
-console.log('4March:: Promises, Questions from Great Frontend');
+console.table(data);
