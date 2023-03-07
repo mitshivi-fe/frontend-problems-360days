@@ -6,3 +6,5 @@ const data = [
 ]
 
 console.table(data);
+
+// Need to dive deep in the usage of Object.hasOwn and usage of for(let key in obj)
