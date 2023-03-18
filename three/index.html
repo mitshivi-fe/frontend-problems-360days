@@ -1,0 +1,82 @@
+<!-- <!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Three.js Bouncing Ball</title>
+    <style>
+      body {
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.136.0/build/three.min.js"></script>
+    <script>
+      // Define variables for the scene, camera, renderer, and ball object
+      var scene, camera, renderer, ball;
+
+      // Set up the scene
+      function init() {
+        // Create the scene
+        scene = new THREE.Scene();
+
+        // Create the camera
+        camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+        camera.position.z = 5;
+
+        // Create the renderer
+        renderer = new THREE.WebGLRenderer();
+        renderer.setSize(window.innerWidth, window.innerHeight);
+        document.body.appendChild(renderer.domElement);
+
+        // Create the ball geometry and material
+        var ballGeometry = new THREE.SphereGeometry(1, 32, 32);
+        var ballMaterial = new THREE.MeshBasicMaterial({ color: 0xff0000 });
+
+        // Create the ball mesh and add it to the scene
+        ball = new THREE.Mesh(ballGeometry, ballMaterial);
+        ball.position.y = 3;
+        scene.add(ball);
+
+        // Create the floor geometry and material
+        var floorGeometry = new THREE.PlaneGeometry(10, 10, 1, 1);
+        var floorMaterial = new THREE.MeshBasicMaterial({ color: 0x00ff00, side: THREE.DoubleSide });
+
+        // Create the floor mesh and add it to the scene
+        var floor = new THREE.Mesh(floorGeometry, floorMaterial);
+        floor.rotation.x = -Math.PI / 2;
+        scene.add(floor);
+
+        // Add a directional light to the scene
+        var directionalLight = new THREE.DirectionalLight(0xffffff, 1);
+        directionalLight.position.set(0, 1, 0);
+        scene.add(directionalLight);
+      }
+
+      // Animate the scene
+      function animate() {
+        // Call the animate function recursively
+        requestAnimationFrame(animate);
+
+        // Make the ball bounce off the floor
+        if (ball.position.y <= 1) {
+          ball.velocity = ball.velocity || new THREE.Vector3(0, 0.1, 0);
+          ball.velocity.y *= -0.8;
+          ball.position.y = 1;
+        }
+
+        // Move the ball according to its velocity
+        ball.position.add(ball.velocity);
+
+        // Render the scene
+        renderer.render(scene, camera);
+      }
+
+      // Call the init function to set up the scene
+      init();
+
+      // Call the animate function to start the animation loop
+      animate();
+    </script>
+  </body>
+</html> -->

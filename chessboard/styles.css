@@ -1,0 +1,30 @@
+body{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+    
+}
+
+#chessboard{
+    border: 1px solid black;
+    width: max-content;
+    margin: auto;
+}
+
+.row{
+    display: flex;
+}
+
+.block{
+    width: 40px;
+    height: 40px;
+}
+
+.black {
+    background-color: black;
+}
+
