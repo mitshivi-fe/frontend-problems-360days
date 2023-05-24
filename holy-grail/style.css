@@ -1,0 +1,37 @@
+body{
+    text-align: center;
+}
+.header{
+    background-color: aqua;
+    height: 40px;
+}
+
+.nav{
+    background-color: blue;
+    flex-grow: 1;
+}
+
+.main{
+    background-color: blueviolet;
+    flex-grow: 2;
+}
+
+.sidebar{
+    background-color: brown;
+    flex-grow: 1;
+}
+
+.footer{
+    background-color: burlywood;
+}
+
+.middle{
+    display: flex;
+    height: 100px;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

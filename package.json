@@ -23,5 +23,8 @@
   "bugs": {
     "url": "https://github.com/mitshivi-fe/frontend-problems-360days/issues"
   },
-  "homepage": "https://github.com/mitshivi-fe/frontend-problems-360days#readme"
+  "homepage": "https://github.com/mitshivi-fe/frontend-problems-360days#readme",
+  "dependencies": {
+    "rxjs": "^7.8.0"
+  }
 }
